@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraShake : MonoBehaviour
 {
     public Transform transform;
+    public Transform playerTransform;
 
     public float shakeDuration = 0f;
 
@@ -27,7 +28,7 @@ public class CameraShake : MonoBehaviour
     {
         if(shakeDuration > 0) {
             Vector3 newPos = originalPos + Random.insideUnitSphere * shakeAmount;
-            //newPos.x = Mathf.Clamp(newPos.x, newPos.x - 1, newPos.x + 1);
+            newPos.x = playerTransform.position.x;
             newPos.y = Mathf.Clamp(newPos.y, -1, 1);
             newPos.z = -10f;
             transform.localPosition = newPos;
@@ -35,7 +36,7 @@ public class CameraShake : MonoBehaviour
             shakeDuration -= Time.deltaTime * decreaseFactor;
         } else {
             shakeDuration = 0f;
-            transform.localPosition = originalPos;
+            this.transform.position = new Vector3(playerTransform.position.x, this.originalPos.y, this.originalPos.z);
         }
     }
 

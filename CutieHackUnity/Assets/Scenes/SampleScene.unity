@@ -234,7 +234,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420033}
   - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
@@ -309,19 +308,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 938291644df7a4ca59d6dbad30aaa873, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followTransform: {fileID: 2018922493}
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,6 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transform: {fileID: 0}
+  playerTransform: {fileID: 2018922493}
   shakeDuration: 0
   shakeAmount: 0.2
   decreaseFactor: 1
@@ -459,7 +446,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1326136742}
   - component: {fileID: 1326136741}
-  - component: {fileID: 1326136740}
   m_Layer: 0
   m_Name: backgroundForest (1)
   m_TagString: Untagged
@@ -467,20 +453,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1326136740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326136739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fb4e6e72f1023e488a745c904e1ca5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundSpeed: 0
-  backgroundRenderer: {fileID: 0}
 --- !u!212 &1326136741
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -558,7 +530,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1547513857}
   - component: {fileID: 1547513856}
-  - component: {fileID: 1547513855}
   m_Layer: 0
   m_Name: backgroundForest (4)
   m_TagString: Untagged
@@ -566,20 +537,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1547513855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547513854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fb4e6e72f1023e488a745c904e1ca5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundSpeed: 0
-  backgroundRenderer: {fileID: 0}
 --- !u!212 &1547513856
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -728,7 +685,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1875497032}
   - component: {fileID: 1875497031}
-  - component: {fileID: 1875497033}
   m_Layer: 0
   m_Name: backgroundForest
   m_TagString: Untagged
@@ -803,18 +759,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1875497033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875497030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1930287177
 Transform:
   m_ObjectHideFlags: 0
