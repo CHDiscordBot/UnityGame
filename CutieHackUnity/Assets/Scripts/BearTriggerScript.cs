@@ -6,6 +6,9 @@ public class BearTriggerScript : MonoBehaviour
 {
     private CameraShake cShake;
 
+    public SpriteRenderer bearPrefab;
+    public Sprite bearSprite;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +23,13 @@ public class BearTriggerScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if(other.tag == "Player") {
+            Vector3 spawnPos = other.GetComponent<Rigidbody2D>().transform.position;
+            spawnPos.x -= 1;
+            SpriteRenderer instance = Instantiate(bearPrefab, spawnPos, Quaternion.identity);
+            instance.flipX = true;
+            instance.sprite = bearSprite;
             cShake.Shake(3f);
+        }
     }
 }

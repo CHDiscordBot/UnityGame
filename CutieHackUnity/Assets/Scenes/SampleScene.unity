@@ -675,6 +675,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1037465084b4a5d99f27dfc3078c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bearPrefab: {fileID: 2748584679263489147, guid: 9eca45c19eee49e4896a50efba61497d, type: 3}
+  bearSprite: {fileID: 1896625548, guid: db52b22f5fa9e9e41b7220ead14e008b, type: 3}
 --- !u!1 &1875497030
 GameObject:
   m_ObjectHideFlags: 0
