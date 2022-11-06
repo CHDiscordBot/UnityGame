@@ -37,7 +37,6 @@ public class PlayerMovement : MonoBehaviour
             renderer.flipX = false;
         
         if(Input.GetKeyDown("space") && canJump) {
-            Debug.Log("space");
             canJump = false;
             body.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
